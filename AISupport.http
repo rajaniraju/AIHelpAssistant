@@ -1,0 +1,6 @@
+@AISupport_HostAddress = http://localhost:5201
+
+GET {{AISupport_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
