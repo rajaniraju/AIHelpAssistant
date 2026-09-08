@@ -9,25 +9,25 @@ namespace AISupport.Controllers
     [Authorize]
     public class AIController : ControllerBase
     {
-        private readonly IAIServices _aiService1;
-        private readonly IAIServices _aiService2;
+        private readonly IAIServices _aiService;
+       
 
         public AIController(IAIServices aiService1, IAIServices aiService2)
         {
-            _aiService1 = aiService1;
-            
+            _aiService = aiService1;
+           
         }
 
         [HttpGet("ask")]
         public string Ask(string question)
         {
-            return _aiService1.Ask(question, _aiService1.Id);
+            return _aiService.Ask(question, _aiService.Id);
         }
 
         [HttpPost("answer")]
         public string answer(string answer)
         {
-            return _aiService2.Answer(answer);
+            return _aiService.Answer(answer);
         }
     }   
 }

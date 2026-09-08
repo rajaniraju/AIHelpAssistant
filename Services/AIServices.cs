@@ -5,7 +5,7 @@ namespace AISupport.Services
     public class AIServices:IAIServices
     {  
         public Guid Id { get; set; } = Guid.NewGuid();
-        public string Ask (string input, Guid serviceId1)
+        public string Ask (string input, Guid serviceId)
         {
             // Placeholder for AI response logic
             return $"Question: {input}, Service ID: {Id}";
