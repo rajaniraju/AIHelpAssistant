@@ -1,0 +1,6 @@
+@AIHelpAssistantWebApplication_HostAddress = http://localhost:5023
+
+GET {{AIHelpAssistantWebApplication_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
